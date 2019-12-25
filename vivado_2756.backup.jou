@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:53:29 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Sat Nov 30 13:12:44 2019
+# Process ID: 2756
+# Current directory: /afs/athena.mit.edu/user/a/n/anthonyn/6111-piano-playing-robot
+# Command line: vivado
+# Log file: /afs/athena.mit.edu/user/a/n/anthonyn/6111-piano-playing-robot/vivado.log
+# Journal file: /afs/athena.mit.edu/user/a/n/anthonyn/6111-piano-playing-robot/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /afs/athena.mit.edu/user/a/n/anthonyn/6111-piano-playing-robot/piano.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /afs/athena.mit.edu/user/a/n/anthonyn/6111-piano-playing-robot/piano.srcs/sources_1/new/readMic.sv] -no_script -reset -force -quiet
+remove_files  /afs/athena.mit.edu/user/a/n/anthonyn/6111-piano-playing-robot/piano.srcs/sources_1/new/readMic.sv
+create_project fftdemo /afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo -part xc7a100tcsg324-1
+set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+current_project piano
+current_project fftdemo
+add_files -scan_for_includes {/afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/src/ip/bram_fft/bram_fft.xci /afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/src/ip/xadc_demo/xadc_demo.xci /afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/src/ip/bram_frame/bram_frame.xci /afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/src/ip/clk_wiz_0/clk_wiz_0.xci /afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/src/hdl/oversampler.v /afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/src/hdl/utils.v /afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/src/hdl/histogram.v /afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/src/hdl/bram_to_fft.v /afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/src/hdl/nexys4_fft_demo.v}
+export_ip_user_files -of_objects  [get_files  {/afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/src/ip/bram_fft/bram_fft.xci /afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/src/ip/xadc_demo/xadc_demo.xci /afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/src/ip/bram_frame/bram_frame.xci /afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/src/ip/clk_wiz_0/clk_wiz_0.xci}] -lib_map_path [list {modelsim=/afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.cache/compile_simlib/modelsim} {questa=/afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.cache/compile_simlib/questa} {ies=/afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.cache/compile_simlib/ies} {xcelium=/afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.cache/compile_simlib/xcelium} {vcs=/afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.cache/compile_simlib/vcs} {riviera=/afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.cache/compile_simlib/riviera}] -force -quiet
+import_files -force
+import_files -fileset constrs_1 -force -norecurse /afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/src/constraints/Nexys4DDR_Master.xdc
+current_project piano
+current_project fftdemo
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes /afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/src/bd/fft_mag/fft_mag.bd
+export_ip_user_files -of_objects  [get_files  /afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/src/bd/fft_mag/fft_mag.bd] -lib_map_path [list {modelsim=/afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.cache/compile_simlib/modelsim} {questa=/afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.cache/compile_simlib/questa} {ies=/afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.cache/compile_simlib/ies} {xcelium=/afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.cache/compile_simlib/xcelium} {vcs=/afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.cache/compile_simlib/vcs} {riviera=/afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.cache/compile_simlib/riviera}] -force -quiet
+import_files -norecurse /afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/src/bd/fft_mag/fft_mag.bd
+export_ip_user_files -of_objects  [get_files  /afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.srcs/sources_1/bd/fft_mag/fft_mag.bd] -lib_map_path [list {modelsim=/afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.cache/compile_simlib/modelsim} {questa=/afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.cache/compile_simlib/questa} {ies=/afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.cache/compile_simlib/ies} {xcelium=/afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.cache/compile_simlib/xcelium} {vcs=/afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.cache/compile_simlib/vcs} {riviera=/afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.cache/compile_simlib/riviera}] -force -quiet
+current_project piano
+current_project fftdemo
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+current_project piano
+current_project fftdemo
+open_bd_design {/afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.srcs/sources_1/bd/fft_mag/fft_mag.bd}
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.runs/impl_1/nexys4_fft_demo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_project

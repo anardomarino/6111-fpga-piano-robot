@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:53:29 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Sat Nov 30 15:54:45 2019
+# Process ID: 4819
+# Current directory: /afs/athena.mit.edu/user/a/n/anthonyn/6111-piano-playing-robot
+# Command line: wbtcv -mode batch -source /afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: /afs/athena.mit.edu/user/a/n/anthonyn/6111-piano-playing-robot/webtalk.log
+# Journal file: /afs/athena.mit.edu/user/a/n/anthonyn/6111-piano-playing-robot/webtalk.jou
+#-----------------------------------------------------------
+source /afs/athena.mit.edu/user/a/n/anthonyn/fftdemo/fft_demo_all/Nexys4FFTDemo-master/proj/fftdemo/fftdemo.hw/webtalk/labtool_webtalk.tcl -notrace
