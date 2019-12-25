@@ -1,4 +1,4 @@
-# 6111-piano-playing-robot
+# 6111-fpga-piano-robot
 
 Creating a robotic piano-playing companion with reliable replication abilities from live sound.
 
